@@ -235,3 +235,40 @@ body::before {
 }
 .empty { text-align: center; color: var(--muted); font-size: 13px; padding: 28px 12px; }
 .empty .em-glyph { font-size: 34px; display: block; margin-bottom: 8px; opacity: 0.5; }
+
+/* ---- Travel / legs -------------------------------------------------- */
+.leg-day {
+  font-family: 'Fraunces', serif; font-size: 16px; font-weight: 600;
+  color: var(--pine); margin: 12px 2px 8px;
+}
+.leg {
+  background: #fff; border: 1px solid var(--line);
+  border-radius: 12px; padding: 12px 14px; margin-bottom: 8px;
+}
+.leg-route { display: flex; align-items: flex-start; gap: 10px; }
+.leg-dot {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--moss); margin-top: 4px; flex: 0 0 auto;
+  box-shadow: 0 0 0 4px rgba(107,143,94,0.18);
+}
+.leg-names { display: flex; flex-direction: column; gap: 2px; }
+.leg-from { font-size: 14px; font-weight: 600; color: var(--ink); }
+.leg-arrow { color: var(--bark-2); font-size: 13px; line-height: 1; }
+.leg-to { font-size: 14px; font-weight: 600; color: var(--ink); }
+.leg-meta {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 8px 0 10px; padding-left: 20px;
+  font-size: 12.5px; color: var(--muted);
+}
+.leg-stat { font-weight: 600; color: var(--pine-2); }
+.leg-sep { color: var(--bark-2); }
+.leg-loading { font-style: italic; }
+.leg-dir {
+  display: inline-block; text-decoration: none;
+  background: var(--pine); color: var(--fog);
+  font-family: inherit; font-size: 13px; font-weight: 600;
+  padding: 9px 14px; border-radius: 10px; margin-left: 20px;
+  transition: transform 0.12s, background 0.15s;
+}
+.leg-dir:active { transform: scale(0.97); }
+.leg-dir:hover { background: var(--pine-2); }

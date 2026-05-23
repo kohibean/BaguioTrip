@@ -112,6 +112,15 @@ export const ATTRACTIONS = [
     lng: 120.5944,
     blurb: 'Strawberries, ube, peanut brittle, woven goods, and fresh highland vegetables.',
     suggestedMins: 60
+  },
+  {
+    id: 'mt-camisong',
+    name: 'Mt. Camisong Forest Park',
+    category: 'view',
+    lat: 16.416083,
+    lng: 120.685972,
+    blurb: 'Eco-park in Itogon (~16 km out) with a 65-ft glass skywalk over the pines. Hard to reach by public transport \u2014 best by car or taxi, and arrange your ride back.',
+    suggestedMins: 180
   }
 ];
 

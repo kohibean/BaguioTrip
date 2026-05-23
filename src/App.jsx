@@ -4,11 +4,13 @@ import { loadTrip, saveTrip, defaultTrip, crpId } from './storage.js';
 import Schedule from './Schedule.jsx';
 import Weather from './Weather.jsx';
 import TripMap from './TripMap.jsx';
+import Travel from './Travel.jsx';
 
 const TABS = [
   { id: 'plan', label: 'Plan', ico: '\u25C8' },
   { id: 'weather', label: 'Weather', ico: '\u2600' },
-  { id: 'map', label: 'Map', ico: '\u25B2' }
+  { id: 'map', label: 'Map', ico: '\u25B2' },
+  { id: 'travel', label: 'Travel', ico: '\u2197' }
 ];
 
 export default function App() {
@@ -50,6 +52,7 @@ export default function App() {
       )}
       {tab === 'weather' && <Weather trip={trip} />}
       {tab === 'map' && <TripMap stops={plannedStops} />}
+      {tab === 'travel' && <Travel trip={trip} attractionById={attractionById} />}
 
       <nav className="tabs">
         {TABS.map((t) => (
