@@ -86,12 +86,4 @@ No CI variables need to be set manually — the registry credentials
 └── .gitlab-ci.yml       # install / quality / build / deploy
 ```
 
-## Customizing
 
-Add or edit stops in `src/data.js` — each entry just needs a name, category,
-real `lat`/`lng`, a blurb, and a suggested duration. The map and schedule pick
-them up automatically.
-=======
-# BaguioTrip
-It's a baguio application!
->>>>>>> 73319cbc900d4d44f12037859b505f29dc1c305c
