@@ -24,7 +24,7 @@ export function saveTrip(trip) {
 export function defaultTrip() {
   return {
     days: [
-      { id: crpId(), title: 'Day 1', stops: [] },
+      { id: crpId(), title: 'Day 10', stops: [] },
       { id: crpId(), title: 'Day 2', stops: [] }
     ]
   };
